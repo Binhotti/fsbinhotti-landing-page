@@ -175,6 +175,10 @@ a {
     transition: transform .25s ease
 }
 
+.header-contact-icon .whatsapp-icon {
+    display: none
+}
+
 .header-contact:hover .header-contact-icon svg {
     transform: translate(2px, -2px)
 }
@@ -854,7 +858,19 @@ a {
 
     .header-contact-icon {
         width: 34px;
-        height: 34px
+        height: 34px;
+        background: var(--ink);
+        color: #fff
+    }
+
+    .header-contact-icon>svg:not(.whatsapp-icon) {
+        display: none
+    }
+
+    .header-contact-icon .whatsapp-icon {
+        display: block;
+        width: 18px;
+        height: 18px
     }
 
     .hero {

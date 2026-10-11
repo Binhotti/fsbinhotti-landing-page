@@ -45,7 +45,7 @@ export default function Home() {
           <a href="#servicos">Serviços</a>
           <a href="#projetos">Projetos</a>
         </nav>
-        <a className="header-contact" href={whatsapp} target="_blank" rel="noopener noreferrer" aria-label="Fale com a gente pelo WhatsApp"><span className="header-contact-label">Fale com a gente</span><span className="header-contact-icon"><Arrow diagonal /></span></a>
+        <a className="header-contact" href={whatsapp} target="_blank" rel="noopener noreferrer" aria-label="Fale com a gente pelo WhatsApp"><span className="header-contact-label">Fale com a gente</span><span className="header-contact-icon"><Arrow diagonal /><WhatsAppIcon /></span></a>
       </header>
 
       <section className="hero" id="inicio" aria-labelledby="hero-title">
