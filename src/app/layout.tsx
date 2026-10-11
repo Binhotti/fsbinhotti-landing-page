@@ -6,6 +6,11 @@ export const metadata: Metadata = {
   title: "FS Binhotti | Transporte e Terraplanagem",
   description:
     "Terraplanagem, escavação e transporte para transformar cada etapa da sua obra. Conheça a FS Binhotti.",
+  icons: {
+    icon: "/icon.png",
+    shortcut: "/icon.png",
+    apple: "/icon.png",
+  },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
