@@ -87,7 +87,7 @@ export default function Home() {
           <div className="section-heading projects-heading"><h2>Trabalho que<br /><em>ganha forma.</em></h2><p>Registros reais de operações, máquinas e terrenos em transformação.</p></div>
         </div>
         <CarouselVertical slides={projects} />
-        <div className="page-width"><a className="all-projects" href={instagram} target="_blank" rel="noopener noreferrer"><span>Acompanhe mais obras no Instagram</span><span className="instagram-icon" aria-hidden="true"><Image src="/icons/instagram.svg" alt="" width={20} height={20} /></span></a></div>
+        <div className="page-width"><a className="all-projects" href={instagram} target="_blank" rel="noopener noreferrer"><span>Acompanhe mais obras no Instagram</span><span className="instagram-icon" aria-hidden="true"><Image src="/icons/instagram-color.webp" alt="" width={38} height={38} /></span></a></div>
       </section>
 
       <section className="contact" id="contato"><div className="page-width contact-inner"><div><span className="eyebrow">VAMOS TIRAR DO PAPEL?</span><h2>Seu próximo projeto<br /><em>começa aqui.</em></h2></div><div className="contact-right"><p>Conte sobre sua obra. Vamos conversar sobre o que você precisa para começar.</p><a className="button button-dark" href={whatsapp} target="_blank" rel="noopener noreferrer"><WhatsAppIcon /><span className="button-label">Conversar no WhatsApp</span><span className="button-icon"><Arrow diagonal /></span></a><a className="phone-link" href="tel:+5547991158062">(47) 99115-8062</a></div></div></section>

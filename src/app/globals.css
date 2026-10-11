@@ -597,19 +597,17 @@ a {
     height: 42px;
     place-items: center;
     border-radius: 50%;
-    background: #1b211d;
-    transition: background .25s, transform .25s
+    transition: transform .25s
 }
 
 .instagram-icon img {
     display: block;
-    width: 20px;
-    height: 20px;
-    filter: invert(1)
+    width: 38px;
+    height: 38px;
+    border-radius: 10px
 }
 
 .all-projects:hover .instagram-icon {
-    background: var(--earth);
     transform: translateY(-2px)
 }
 
