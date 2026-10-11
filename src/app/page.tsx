@@ -11,6 +11,8 @@ const projects = [
   { src: "/images/obra-terreno-residencial-premium.webp", category: "TERRAPLANAGEM / 01", title: "Preparação de terreno" },
   { src: "/images/obra-escavacao-premium.webp", category: "ESCAVAÇÃO / 02", title: "Escavação e remoção" },
   { src: "/images/obra-urbana-premium.webp", category: "TRANSPORTE / 03", title: "Limpeza" },
+  { src: "/images/obra-condominio-premium-v2.webp", category: "TERRAPLANAGEM / 04", title: "Movimentação de terra" },
+  { src: "/images/obra-carregamento-premium-v1.webp", category: "TRANSPORTE / 05", title: "Carregamento de materiais" },
 ];
 
 function Arrow({ diagonal = false }: { diagonal?: boolean }) {
