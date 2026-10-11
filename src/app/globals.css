@@ -592,10 +592,10 @@ a {
 
 .cta-glyph {
     display: block;
-    flex: 0 0 38px;
-    width: 38px;
-    height: 38px;
-    border-radius: 10px;
+    flex: 0 0 32px;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -661,13 +661,6 @@ a {
 
 .button-dark:hover .button-icon {
     background: white
-}
-
-.phone-link {
-    display: block;
-    font-weight: 700;
-    margin-top: 20px;
-    font-size: 14px
 }
 
 .footer {
