@@ -591,20 +591,13 @@ a {
 }
 
 .instagram-icon {
-    display: grid;
-    flex: 0 0 42px;
-    width: 42px;
-    height: 42px;
-    place-items: center;
-    border-radius: 50%;
-    transition: transform .25s
-}
-
-.instagram-icon img {
     display: block;
+    flex: 0 0 38px;
     width: 38px;
     height: 38px;
-    border-radius: 10px
+    border-radius: 10px;
+    background: url('/icons/instagram-color.webp') center / contain no-repeat;
+    transition: transform .25s
 }
 
 .all-projects:hover .instagram-icon {
