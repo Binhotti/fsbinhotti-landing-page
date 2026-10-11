@@ -1,8 +1,11 @@
 import Image from "next/image";
+import { readFileSync } from "node:fs";
+import { join } from "node:path";
 import CarouselVertical from "@/components/ui/carousel-03";
 
 const whatsapp = "https://wa.me/5547991158062?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20terraplanagem.";
 const instagram = "https://www.instagram.com/fsbinhotti/";
+const socialMark = `data:image/webp;base64,${readFileSync(join(process.cwd(), "public", "icons", "instagram-color.webp")).toString("base64")}`;
 
 const projects = [
   { src: "/images/obra-terreno-residencial-premium.webp", category: "TERRAPLANAGEM / 01", title: "Preparação de terreno" },
@@ -87,7 +90,7 @@ export default function Home() {
           <div className="section-heading projects-heading"><h2>Trabalho que<br /><em>ganha forma.</em></h2><p>Registros reais de operações, máquinas e terrenos em transformação.</p></div>
         </div>
         <CarouselVertical slides={projects} />
-        <div className="page-width"><a className="all-projects" href={instagram} target="_blank" rel="noopener noreferrer"><span>Acompanhe mais obras no Instagram</span><span className="instagram-icon" aria-hidden="true" /></a></div>
+        <div className="page-width"><a className="all-projects" href={instagram} target="_blank" rel="noopener noreferrer"><span>Acompanhe mais obras no Instagram</span><span className="cta-glyph" aria-hidden="true" style={{ backgroundImage: `url("${socialMark}")` }} /></a></div>
       </section>
 
       <section className="contact" id="contato"><div className="page-width contact-inner"><div><span className="eyebrow">VAMOS TIRAR DO PAPEL?</span><h2>Seu próximo projeto<br /><em>começa aqui.</em></h2></div><div className="contact-right"><p>Conte sobre sua obra. Vamos conversar sobre o que você precisa para começar.</p><a className="button button-dark" href={whatsapp} target="_blank" rel="noopener noreferrer"><WhatsAppIcon /><span className="button-label">Conversar no WhatsApp</span><span className="button-icon"><Arrow diagonal /></span></a><a className="phone-link" href="tel:+5547991158062">(47) 99115-8062</a></div></div></section>
