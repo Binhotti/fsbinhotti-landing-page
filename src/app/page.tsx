@@ -2,6 +2,7 @@ import Image from "next/image";
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import CarouselVertical from "@/components/ui/carousel-03";
+import ScrollReveal from "@/components/ui/scroll-reveal";
 
 const whatsapp = "https://wa.me/5547991158062?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20terraplanagem.";
 const instagram = "https://www.instagram.com/fsbinhotti/";
@@ -35,6 +36,7 @@ function WhatsAppIcon() {
 export default function Home() {
   return (
     <main>
+      <ScrollReveal />
       <header className="site-header">
         <a className="brand" href="#inicio" aria-label="FS Binhotti, voltar ao início">
           <Image src="/images/logo-premium.webp" alt="" width={58} height={58} priority />
@@ -53,7 +55,7 @@ export default function Home() {
         <div className="hero-shade" />
         <div className="hero-content page-width">
           <p className="eyebrow hero-eyebrow"><span className="eyebrow-line" /> FS BINHOTTI · TRANSPORTE E TERRAPLANAGEM</p>
-          <h1 id="hero-title">A base certa para<br /><em>o que vem pela frente.</em></h1>
+          <h1 id="hero-title" data-reveal-title>A base certa para<br /><em>o que vem pela frente.</em></h1>
           <p className="hero-copy">Terraplanagem, escavação e transporte com a força de quem faz acontecer no campo.</p>
           <div className="hero-actions">
             <a className="button button-light" href={whatsapp} target="_blank" rel="noopener noreferrer"><span className="button-label">Solicitar orçamento</span><span className="button-icon"><Arrow diagonal /></span></a>
@@ -66,7 +68,7 @@ export default function Home() {
       <section className="intro page-width" id="sobre">
         <div className="section-index"><span>01 / SOBRE NÓS</span><span className="small-line" /></div>
         <div className="intro-main">
-          <h2>Grandes projetos<br />começam <em>pelo chão.</em></h2>
+          <h2 data-reveal-title>Grandes projetos<br />começam <em>pelo chão.</em></h2>
           <div className="intro-aside"><p>É na preparação do terreno que cada obra ganha direção. A FS Binhotti atua com transporte e terraplanagem para deixar o caminho pronto para a próxima etapa.</p><a className="text-link" href="#servicos">Conheça nossa atuação <Arrow /></a></div>
         </div>
       </section>
@@ -78,7 +80,7 @@ export default function Home() {
 
       <section className="services page-width" id="servicos">
         <div className="section-index"><span>02 / O QUE FAZEMOS</span><span className="small-line" /></div>
-        <div className="section-heading"><h2>Soluções que<br /><em>movem sua obra.</em></h2><p>Equipamentos e trabalho em campo para preparar, escavar e transportar.</p></div>
+        <div className="section-heading"><h2 data-reveal-title>Soluções que<br /><em>movem sua obra.</em></h2><p>Equipamentos e trabalho em campo para preparar, escavar e transportar.</p></div>
         <div className="service-list">
           <article className="service-row"><span className="service-number">01</span><div><h3>Terraplanagem</h3><p>Preparação e conformação do terreno para receber a próxima fase do projeto.</p></div><span className="service-arrow">↗</span></article>
           <article className="service-row"><span className="service-number">02</span><div><h3>Escavação</h3><p>Movimentação de solo para atender às necessidades de cada obra.</p></div><span className="service-arrow">↗</span></article>
@@ -89,13 +91,13 @@ export default function Home() {
       <section className="projects" id="projetos">
         <div className="page-width">
           <div className="section-index"><span>03 / EM CAMPO</span><span className="small-line" /></div>
-          <div className="section-heading projects-heading"><h2>Trabalho que<br /><em>ganha forma.</em></h2><p>Registros reais de operações, máquinas e terrenos em transformação.</p></div>
+          <div className="section-heading projects-heading"><h2 data-reveal-title>Trabalho que<br /><em>ganha forma.</em></h2><p>Registros reais de operações, máquinas e terrenos em transformação.</p></div>
         </div>
         <CarouselVertical slides={projects} />
         <div className="page-width"><a className="all-projects" href={instagram} target="_blank" rel="noopener noreferrer"><span>Acompanhe mais obras no Instagram</span><span className="cta-glyph" aria-hidden="true" style={{ backgroundImage: `url("${socialMark}")` }} /></a></div>
       </section>
 
-      <section className="contact" id="contato"><div className="page-width contact-inner"><div><span className="eyebrow">VAMOS TIRAR DO PAPEL?</span><h2>Seu próximo projeto<br /><em>começa aqui.</em></h2></div><div className="contact-right"><p>Conte sobre sua obra. Vamos conversar sobre o que você precisa para começar.</p><a className="button button-dark" href={whatsapp} target="_blank" rel="noopener noreferrer"><WhatsAppIcon /><span className="button-label">Conversar no WhatsApp</span><span className="button-icon"><Arrow diagonal /></span></a></div></div></section>
+      <section className="contact" id="contato"><div className="page-width contact-inner"><div><span className="eyebrow">VAMOS TIRAR DO PAPEL?</span><h2 data-reveal-title>Seu próximo projeto<br /><em>começa aqui.</em></h2></div><div className="contact-right"><p>Conte sobre sua obra. Vamos conversar sobre o que você precisa para começar.</p><a className="button button-dark" href={whatsapp} target="_blank" rel="noopener noreferrer"><WhatsAppIcon /><span className="button-label">Conversar no WhatsApp</span><span className="button-icon"><Arrow diagonal /></span></a></div></div></section>
 
       <footer className="footer"><div className="page-width footer-main"><div className="footer-brand"><Image src="/images/logo-premium.webp" alt="Logo FS Binhotti" width={80} height={80} /><p>FS BINHOTTI<br /><span>TRANSPORTE E TERRAPLANAGEM</span></p></div><div className="footer-links"><a href="#inicio">Voltar ao topo ↑</a><a href={instagram} target="_blank" rel="noopener noreferrer">Instagram ↗</a><a href={whatsapp} target="_blank" rel="noopener noreferrer">WhatsApp ↗</a></div></div><div className="page-width footer-bottom"><span>© {new Date().getFullYear()} FS Binhotti. Todos os direitos reservados.</span><span>FEITO PARA IR MAIS LONGE.</span></div></footer>
     </main>
