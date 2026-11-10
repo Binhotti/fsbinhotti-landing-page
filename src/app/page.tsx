@@ -6,6 +6,7 @@ import ScrollReveal from "@/components/ui/scroll-reveal";
 
 const whatsapp = "https://wa.me/5547991158062?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20terraplanagem.";
 const instagram = "https://www.instagram.com/fsbinhotti/";
+const vbgInstagram = "https://www.instagram.com/vbgagency/";
 const socialMark = `data:image/webp;base64,${readFileSync(join(process.cwd(), "public", "icons", "instagram-color.webp")).toString("base64")}`;
 
 const projects = [
@@ -99,7 +100,19 @@ export default function Home() {
 
       <section className="contact" id="contato"><div className="page-width contact-inner"><div><span className="eyebrow">VAMOS TIRAR DO PAPEL?</span><h2 data-reveal-title>Seu próximo projeto<br /><em>começa aqui.</em></h2></div><div className="contact-right"><p>Conte sobre sua obra. Vamos conversar sobre o que você precisa para começar.</p><a className="button button-dark" href={whatsapp} target="_blank" rel="noopener noreferrer"><WhatsAppIcon /><span className="button-label">Conversar no WhatsApp</span><span className="button-icon"><Arrow diagonal /></span></a></div></div></section>
 
-      <footer className="footer"><div className="page-width footer-main"><div className="footer-brand"><Image src="/images/logo-premium.webp" alt="Logo FS Binhotti" width={80} height={80} /><p>FS BINHOTTI<br /><span>TRANSPORTE E TERRAPLANAGEM</span></p></div><div className="footer-links"><a href="#inicio">Voltar ao topo ↑</a><a href={instagram} target="_blank" rel="noopener noreferrer">Instagram ↗</a><a href={whatsapp} target="_blank" rel="noopener noreferrer">WhatsApp ↗</a></div></div><div className="page-width footer-bottom"><span>© {new Date().getFullYear()} FS Binhotti. Todos os direitos reservados.</span><span>FEITO PARA IR MAIS LONGE.</span></div></footer>
+      <footer className="footer">
+        <div className="page-width footer-main">
+          <div className="footer-brand"><Image src="/images/logo-premium.webp" alt="Logo FS Binhotti" width={80} height={80} /><p>FS BINHOTTI<br /><span>TRANSPORTE E TERRAPLANAGEM</span></p></div>
+          <div className="footer-links"><a href="#inicio">Voltar ao topo ↑</a><a href={instagram} target="_blank" rel="noopener noreferrer">Instagram ↗</a><a href={whatsapp} target="_blank" rel="noopener noreferrer">WhatsApp ↗</a></div>
+        </div>
+        <div className="page-width footer-bottom">
+          <span>© {new Date().getFullYear()} FS Binhotti. Todos os direitos reservados.</span>
+          <a className="footer-credit" href={vbgInstagram} target="_blank" rel="noopener noreferrer" aria-label="Site desenvolvido pela VBG Agency. Abrir Instagram da agência">
+            <span>Desenvolvido por</span>
+            <Image src="/images/vbg-agency-logo.png" alt="VBG Agency" width={130} height={52} />
+          </a>
+        </div>
+      </footer>
     </main>
   );
 }
