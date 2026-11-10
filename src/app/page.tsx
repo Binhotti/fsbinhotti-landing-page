@@ -110,7 +110,7 @@ export default function Home() {
           <div className="footer-credit">
             <span>Desenvolvido por</span>
             <a className="footer-credit-logo" href={vbgInstagram} target="_blank" rel="noopener noreferrer" aria-label="Abrir Instagram da VBG Agency">
-              <Image src="/images/vbg-agency-logo-transparent.png" alt="VBG Agency" width={130} height={52} />
+              <Image src="/images/vbg-agency-logo-clean.png" alt="VBG Agency" width={130} height={52} />
             </a>
           </div>
         </div>
