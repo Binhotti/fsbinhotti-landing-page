@@ -107,10 +107,12 @@ export default function Home() {
         </div>
         <div className="page-width footer-bottom">
           <span>© {new Date().getFullYear()} FS Binhotti. Todos os direitos reservados.</span>
-          <a className="footer-credit" href={vbgInstagram} target="_blank" rel="noopener noreferrer" aria-label="Site desenvolvido pela VBG Agency. Abrir Instagram da agência">
+          <div className="footer-credit">
             <span>Desenvolvido por</span>
-            <Image src="/images/vbg-agency-logo.png" alt="VBG Agency" width={130} height={52} />
-          </a>
+            <a className="footer-credit-logo" href={vbgInstagram} target="_blank" rel="noopener noreferrer" aria-label="Abrir Instagram da VBG Agency">
+              <Image src="/images/vbg-agency-logo-transparent.png" alt="VBG Agency" width={130} height={52} />
+            </a>
+          </div>
         </div>
       </footer>
     </main>
